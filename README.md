@@ -1,144 +1,152 @@
-🧩 WordPress Task Manager Plugin
+# 🧩 WordPress Task Manager Plugin
 
-A lightweight WordPress plugin built to learn and understand WordPress plugin development, with a focus on hooks, database handling, security, and admin dashboard customization.
+A lightweight WordPress plugin built to **learn and understand WordPress plugin development**, with a focus on hooks, database handling, security, and admin dashboard customization.
 
-📌 Purpose
+---
 
-This project was created as a hands-on learning exercise to explore core WordPress plugin concepts, including:
+## 📌 Purpose
 
-WordPress plugin structure and lifecycle
+This project was created as a **hands-on learning exercise** to explore core WordPress plugin concepts, including:
 
-Using hooks and activation hooks
+* WordPress plugin structure and lifecycle
+* Using **hooks** and **activation hooks**
+* Secure interaction with the WordPress database
+* Building custom **admin dashboard pages**
 
-Secure interaction with the WordPress database
+The primary goal is **clarity, correctness, and best practices**, rather than production-level complexity.
 
-Building custom admin dashboard pages
+---
 
-The primary goal is clarity, correctness, and best practices, rather than production-level complexity.
+## ✨ Features
 
-✨ Features
+* Custom **Admin Menu Page** in the WordPress dashboard
+* Add and delete tasks using a simple, clean UI
+* Secure form handling using **nonces** and input sanitization
+* Custom MySQL table creation using `dbDelta`
+* Clean and minimal plugin architecture following WordPress standards
 
-Custom Admin Menu Page in the WordPress dashboard
+---
 
-Add and delete tasks using a simple, clean UI
+## 🛠️ Tech Stack
 
-Secure form handling using nonces and input sanitization
+* **PHP**
+* **WordPress**
+* **MySQL**
+* WordPress Hooks & `$wpdb`
 
-Custom MySQL table creation using dbDelta
+---
 
-Clean and minimal plugin architecture following WordPress standards
+## 📂 Folder Structure
 
-🛠️ Tech Stack
-
-PHP
-
-WordPress
-
-MySQL
-
-WordPress Hooks & $wpdb
-
-📂 Folder Structure
+```text
 simple-task-manager/
 │── simple-task-manager.php
 │── README.md
+```
 
-🚀 How to Run This Plugin (Step-by-Step)
-Step 1: Set Up WordPress Locally
+---
 
-Install XAMPP / WAMP / LocalWP
+## 🚀 How to Run This Plugin
 
-Start Apache and MySQL
+### Step 1: Set Up WordPress Locally
 
-Download WordPress from https://wordpress.org
+1. Install **XAMPP / WAMP / LocalWP**
+2. Start **Apache** and **MySQL**
+3. Download WordPress from [https://wordpress.org](https://wordpress.org)
+4. Extract WordPress into:
 
-Extract WordPress into:
+   ```
+   htdocs/wordpress
+   ```
+5. Create a database named `wordpress` using phpMyAdmin
+6. Complete the WordPress installation via:
 
-htdocs/wordpress
+   ```
+   http://localhost/wordpress
+   ```
 
+---
 
-Create a database named wordpress using phpMyAdmin
+### Step 2: Install the Plugin
 
-Complete WordPress installation via:
+1. Navigate to:
 
-http://localhost/wordpress
+   ```
+   wp-content/plugins/
+   ```
+2. Create a folder named:
 
-Step 2: Install the Plugin
+   ```
+   simple-task-manager
+   ```
+3. Copy `simple-task-manager.php` into this folder
 
-Navigate to:
+---
 
-wp-content/plugins/
+### Step 3: Activate the Plugin
 
+1. Open WordPress Admin:
 
-Create a folder:
+   ```
+   http://localhost/wordpress/wp-admin
+   ```
+2. Go to **Plugins → Installed Plugins**
+3. Activate **WordPress Task Manager Plugin**
 
-simple-task-manager
+---
 
+### Step 4: Use the Plugin
 
-Copy simple-task-manager.php into this folder
+1. After activation, find **Task Manager** in the admin sidebar
+2. Add new tasks using the input field
+3. Delete tasks using the delete button
+4. All tasks are stored securely in the WordPress database
 
-Step 3: Activate the Plugin
+---
 
-Open WordPress Admin:
+## 🔧 How It Works (Behind the Scenes)
 
-http://localhost/wordpress/wp-admin
+* Creates a custom database table on plugin activation
+* Uses WordPress hooks to register admin menus
+* Handles form submission securely using **nonces**
+* Performs CRUD operations using `$wpdb`
+* Follows WordPress coding standards and best practices
 
+---
 
-Go to Plugins → Installed Plugins
+## 📷 Screenshots
 
-Activate WordPress Task Manager Plugin
-
-Step 4: Use the Plugin
-
-After activation, find Task Manager in the admin sidebar
-
-Add new tasks using the input field
-
-Delete tasks using the delete button
-
-All tasks are stored securely in the WordPress database
-
-🔧 How It Works (Behind the Scenes)
-
-Creates a custom database table on plugin activation
-
-Uses WordPress hooks to register admin menus
-
-Handles form submission securely with nonces
-
-Performs CRUD operations using $wpdb
-
-Follows WordPress coding standards and best practices
-
-📷 Screenshots
 <img width="400" height="400" alt="Task Manager Admin Page" src="https://github.com/user-attachments/assets/bc138d86-73db-4629-9202-c2679027ff6b" />
-🎯 Learning Outcomes
 
-Understood the WordPress plugin lifecycle
+---
 
-Learned how activation hooks work
+## 🎯 Learning Outcomes
 
-Practiced secure CRUD operations
+* Understood the **WordPress plugin lifecycle**
+* Learned how **activation hooks** work
+* Practiced **secure CRUD operations**
+* Built admin pages using WordPress APIs
+* Gained hands-on experience with **PHP in WordPress**
 
-Built admin pages using WordPress APIs
+---
 
-Gained hands-on experience with PHP in WordPress
+## 📎 Note
 
-📎 Note
+This plugin is intended **for learning and practice purposes only** and is not designed for production use.
 
-This plugin is intended for learning and practice purposes only and is not designed for production use.
+---
 
-👤 Author
+## 👤 Author
 
-Manas Kumar
-GitHub: https://github.com/rookiecoder910
+**Manas Kumar**
+GitHub: [https://github.com/rookiecoder910](https://github.com/rookiecoder910)
 
-⭐ Why This Project Exists
+---
+
+## ⭐ Why This Project Exists
 
 This repository demonstrates:
 
-Intentional learning of WordPress development
-
-Understanding of WordPress internals
-
-Clean, readable, and well-structured PHP code
+* Intentional learning of **WordPress development**
+* Understanding of **WordPress internals**
+* Clean, readable, and well-structured **PHP code**
