@@ -143,10 +143,4 @@ Understanding of WordPress internals
 
 Clean and readable PHP code structure
 
-✅ Final Git Commands
 
-After updating this README:
-
-git add README.md
-git commit -m "Add step-by-step usage guide for WordPress task manager plugin"
-git push
