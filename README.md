@@ -1,6 +1,6 @@
 🧩 WordPress Task Manager Plugin
 
-A lightweight WordPress plugin built to learn and understand WordPress plugin development, focusing on hooks, database handling, security, and admin dashboard customization.
+A lightweight WordPress plugin built to learn and understand WordPress plugin development, with a focus on hooks, database handling, security, and admin dashboard customization.
 
 📌 Purpose
 
@@ -14,13 +14,13 @@ Secure interaction with the WordPress database
 
 Building custom admin dashboard pages
 
-The primary goal is clarity, correctness, and best practices, not production-level complexity.
+The primary goal is clarity, correctness, and best practices, rather than production-level complexity.
 
 ✨ Features
 
 Custom Admin Menu Page in the WordPress dashboard
 
-Add and delete tasks using a simple UI
+Add and delete tasks using a simple, clean UI
 
 Secure form handling using nonces and input sanitization
 
@@ -141,6 +141,4 @@ Intentional learning of WordPress development
 
 Understanding of WordPress internals
 
-Clean and readable PHP code structure
-
-
+Clean, readable, and well-structured PHP code
